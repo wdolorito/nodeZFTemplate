@@ -8,17 +8,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Node + Foundation template</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/css/foundation.min.css" integrity="sha256-iJQ8dZac/jUYHxiEnZJsyVpKcdq2sQvdA7t02QFmp30= sha384-SplqNBo/0ZlvSdwrP/riIPDozO5ck8+yIm++KVqyMAC53S6m3BaV+2OLpi7ULOOh sha512-ho6hK4sAWdCeqopNZWNy1d9Ok2hzfTLQLcGSr8ZlRzDzh6tNHkVoqSl6wgLsqls3yazwiG9H9dBCtSfPuiLRCQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
 <body>
-  <div class="grid-container text-center">
-    <h1>Hello World!</h1>
+  <div class="grid-container">
+    <h3>Hello World!</h3>
+
+    <h4>This is a simple template for getting up and running with <a href="https://get.foundation/index.html">Zurb Foundation</a></h4>
+
+    <p>Built on <a href="https://nodejs.org/en/">nodejs</a> and <a href="https://expressjs.com/">expressjs</a> v4.17.1</p>
+    <p>404 error asset from <a href="https://unsplash.com/">https://unsplash.com/</a> by <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@jack_1?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Rémi Jacquaint"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Rémi Jacquaint</span></a></p>
+
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-2"><h5>Software</h5></div>
+        <div class="cell small-2"><h5>Version</h5></div>
+        <div class="cell small-3"><h5>Documentation</h5></div>
+      </div>
+
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-2">jQuery</div>
+        <div class="cell small-2">3.5.1</div>
+        <div class="cell small-3"><a href="https://api.jquery.com/">https://api.jquery.com/</a></div>
+      </div>
+
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-2">Foundation Sites</div>
+        <div class="cell small-2">6.6.3</div>
+        <div class="cell small-3"><a href="https://get.foundation/sites/docs/">https://get.foundation/sites/docs/</a></div>
+      </div>
+    </div>
+
+    <br/>
+
+    <h4>Using this template</h4>
+    
+    <p>Copy this file (<code class="code-inline">index.html</code>) to another file in <code class="code-inline">views</code>, for instance <code class="code-inline">anotherfile.html</code>.  Then add another route in <code class="code-inline">routes.js</code>:</p>
+
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-6">
+          <code class="code-block">router.get('/somelocation', function(req, res) {
+  res.sendFile(views + '/anotherfile.html')
+})</code>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.2/dist/js/foundation.min.js" integrity="sha256-G6jsRyH1fxbsvFIXSCuwYmI1aIDYBa28xscrvmYjJy0= sha384-vtoG68NvPc9azmFJr447vvY8qgdyA4FdaJ5/bqvzIM4eAdZfO0iyRRF8l2AAscYI sha512-43seCcNrHA0BQgrtyajB9sp8yOdv5c8QdYvgjP7zJ7v+dmzAcxYDQ2gupb9aztsNWBq1COIp/3NHYkQs4l/dkg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"><script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js" type="text/javascript"><script>
   <script src="/js/script.js" type="text/javascript"></script>
+
 </body>
 </html>
