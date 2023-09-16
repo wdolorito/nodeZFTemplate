@@ -4,10 +4,10 @@
   "description": "Node + Foundation template",
   "main": "index.js",
   "dependencies": {
-    "express": "*"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon": "*"
+    "nodemon": "^3.0.1"
   },
   "scripts": {
     "start": "node index.js",
